@@ -1,0 +1,42 @@
+<!-- 
+  1. open terminal
+  2. Nav: cd /path/to/your/project
+  3. start server: python -m http.server 8080
+  4. http://localhost:8080
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- MapLibre GL JS // NEED -->
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Map</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Papa Parse  // NEED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    
+</head>
+
+    <h1>Work & Brew</h1>
+
+    <section class="map-section">
+        <!-- map container  // NEED -->
+        <section class="map-section">
+          <div id="map" style="width: 100%; max-width: 600p; height:600px;"></div>
+        </section>
+    </section>
+
+    <!-- JS  // NEED -->
+    <script type="module" src="script.js"></script>
+
+<body>
+</body>
+
+</html>
